@@ -1,7 +1,13 @@
 #!/bin/bash
 
-running=`ps -ef | grep i3status | grep -v grep | wc -l`
-[[ $running == 1 ]] && exit 1
+
+
+# I am displaying i3dzen2 status at bottom of screen 
+# and py3status at top of screen. Both using i3status
+# So start another i3status instance instead exit.
+
+#running=`ps -ef | grep i3status | grep -v grep | wc -l`
+#[[ $running == 1 ]] && exit 1
 
 
 SELF_PATH=`readlink -f $0`
